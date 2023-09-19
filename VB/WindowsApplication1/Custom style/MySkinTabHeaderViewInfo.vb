@@ -1,7 +1,7 @@
-﻿Imports System
 Imports DevExpress.XtraTab.ViewInfo
 
 Namespace WindowsApplication1
+
     Public Class MySkinTabHeaderViewInfo
         Inherits SkinTabHeaderViewInfo
 

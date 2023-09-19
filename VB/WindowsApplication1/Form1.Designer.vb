@@ -1,5 +1,7 @@
-﻿Namespace WindowsApplication1
-    Partial Public Class Form1
+Namespace WindowsApplication1
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -32,10 +34,10 @@
             Me.xtraTabPage4 = New DevExpress.XtraTab.XtraTabPage()
             Me.xtraTabPage5 = New DevExpress.XtraTab.XtraTabPage()
             Me.xtraTabPage6 = New DevExpress.XtraTab.XtraTabPage()
-            CType(Me.xtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.xtraTabControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.xtraTabControl1.SuspendLayout()
             Me.xtraTabPage1.SuspendLayout()
-            CType(Me.groupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.groupControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.xtraTabPage2.SuspendLayout()
             Me.SuspendLayout()
             ' 
@@ -48,7 +50,8 @@
             Me.xtraTabControl1.SelectedTabPage = Me.xtraTabPage1
             Me.xtraTabControl1.Size = New System.Drawing.Size(389, 259)
             Me.xtraTabControl1.TabIndex = 0
-            Me.xtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() { Me.xtraTabPage1, Me.xtraTabPage2, Me.xtraTabPage3, Me.xtraTabPage4, Me.xtraTabPage5, Me.xtraTabPage6})
+            Me.xtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.xtraTabPage1, Me.xtraTabPage2, Me.xtraTabPage3, Me.xtraTabPage4, Me.xtraTabPage5, Me.xtraTabPage6})
+            AddHandler Me.xtraTabControl1.MouseDown, New System.Windows.Forms.MouseEventHandler(AddressOf Me.xtraTabControl1_MouseDown)
             ' 
             ' xtraTabPage1
             ' 
@@ -128,27 +131,31 @@
             Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            CType(Me.xtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.xtraTabControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.xtraTabControl1.ResumeLayout(False)
             Me.xtraTabPage1.ResumeLayout(False)
-            CType(Me.groupControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.groupControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.xtraTabPage2.ResumeLayout(False)
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
+#End Region
+        Private xtraTabControl1 As DevExpress.XtraTab.XtraTabControl
 
-        Private WithEvents xtraTabControl1 As DevExpress.XtraTab.XtraTabControl
         Private xtraTabPage1 As DevExpress.XtraTab.XtraTabPage
-        Private xtraTabPage2 As DevExpress.XtraTab.XtraTabPage
-        Private groupControl1 As DevExpress.XtraEditors.GroupControl
-        Private simpleButton2 As DevExpress.XtraEditors.SimpleButton
-        Private xtraTabPage3 As DevExpress.XtraTab.XtraTabPage
-        Private xtraTabPage4 As DevExpress.XtraTab.XtraTabPage
-        Private xtraTabPage5 As DevExpress.XtraTab.XtraTabPage
-        Private xtraTabPage6 As DevExpress.XtraTab.XtraTabPage
 
+        Private xtraTabPage2 As DevExpress.XtraTab.XtraTabPage
+
+        Private groupControl1 As DevExpress.XtraEditors.GroupControl
+
+        Private simpleButton2 As DevExpress.XtraEditors.SimpleButton
+
+        Private xtraTabPage3 As DevExpress.XtraTab.XtraTabPage
+
+        Private xtraTabPage4 As DevExpress.XtraTab.XtraTabPage
+
+        Private xtraTabPage5 As DevExpress.XtraTab.XtraTabPage
+
+        Private xtraTabPage6 As DevExpress.XtraTab.XtraTabPage
     End Class
 End Namespace
-
