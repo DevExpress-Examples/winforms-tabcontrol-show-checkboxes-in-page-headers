@@ -8,7 +8,7 @@
 
 This example displays checkboxes in tab page headers. The page's `Tag` property is used to store page state.
 
-![WinForms TabControl - Display checkboxes in tab headers](https://raw.githubusercontent.com/DevExpress-Examples/how-to-show-checkboxes-in-xtratabcontrols-pages-headers-e3039/17.2.6%2B/media/winforms-tabcontrol-checkbox-in-tab-header.png)
+![WinForms TabControl - Display checkboxes in tab headers](media/winforms-tabcontrol-checkbox-in-tab-header.png)
 
 ```csharp
 public partial class Form1 : XtraForm {
@@ -45,3 +45,4 @@ public partial class Form1 : XtraForm {
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
